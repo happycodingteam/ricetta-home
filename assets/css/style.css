@@ -82,28 +82,28 @@ display: block;
 	line-height: 24px;
 	background: none;
 	border-radius: 20px;
-	border: 1px solid #7F78E0;
+	border: 2.5px solid #7F78E0;
 	padding: 15px 42px;
 	width: 100%;
 }
 
 
 
-.form-area .mian-form  .flex-box{
+.form-area .mian-form  .flex-box-one{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.form-area .mian-form  .flex-box .agree {
+.form-area .mian-form  .flex-box-one .agree {
     margin: 0 !important;
     padding: 0 !important;
 }
-.form-area .mian-form  .flex-box .agree .check-box{
+.form-area .mian-form  .flex-box-one .agree .check-box{
     height: 24px; 
     width: 24px;
     margin-right: 24px;
 }
-.form-area .mian-form  .flex-box .agree .label-text{
+.form-area .mian-form  .flex-box-one .agree .label-text{
     color: #000;
 font-family: Poppins;
 font-size: 16px;
@@ -236,7 +236,7 @@ width: 100%;
         font-size: 15px;
         margin-bottom: 8px;
     }
-    .form-area .mian-form .flex-box .agree .label-text {
+    .form-area .mian-form .flex-box-one .agree .label-text {
        
         font-size: 14px;
        
@@ -267,6 +267,12 @@ width: 100%;
 /* -------------------------------------------------------------- */
 .wapper{
     background: url(../images/bg-02.png)no-repeat scroll 0 0 / 100% 100%;
+}
+@media all and (max-width:767px) {
+    .wapper {
+      
+        background-size: cover;
+    }
 }
 /*=========================================*/
 /*========Start Main Product Section=======*/
@@ -917,12 +923,13 @@ line-height: normal;
     align-items: center;
     flex-wrap: wrap;
 }
-.review-item{
-    flex-basis: 48%;
-    margin-bottom: 40px;
-    border-radius: 20px;
-background: var(--verdino-mentino, #7DDE92);
-padding: 50px;
+.review-item {
+	flex-basis: 48%;
+	margin-bottom: 40px;
+	border-radius: 20px;
+	background: var(--verdino-mentino, #7DDE92);
+	padding: 50px;
+	height: 380px;
 }
 .review-item .review-star-area{
     display: flex;
@@ -991,7 +998,26 @@ font-weight: 400;
 line-height: normal;
 }
 
-
+.read-more-button-area{
+    text-align: center;
+    padding: 130px 0px;
+}
+.read-more-button-area .readmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.read-more-button-area .readmore .plus{
+    margin: 10px;
+}
+.read-more-button-area .readmore .read-more-text{
+    color: var(--testi-colore, #35293B);
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 
 
 @media all and (max-width:991px) {
@@ -1009,6 +1035,10 @@ line-height: normal;
     .review-heading {
         padding: 70px 0px 70px;
     }
+    .review-item .user-details-date {
+        padding-top: 64px;
+       
+    }
 }
 @media all and (max-width:767px) {
     .review-item{
@@ -1023,6 +1053,18 @@ line-height: normal;
         font-size: 27px;
         padding-bottom: 10px;
        
+    }
+    .read-more-button-area{
+        text-align: center;
+        padding: 40px 0px;
+    }
+    .review-item .user-details-date {
+        padding-top: 64px;
+       
+    }
+    .review-item {
+       
+        height: unset;
     }
 
 }
@@ -1061,4 +1103,432 @@ line-height: normal;
 
 
 
+/*=========================================*/
+/*========Start Main technology Section=======*/
+/*=========================================*/
 
+.main-technology-section{}
+.technology-item{}
+.technology-item .technology-heading{
+    color: #000;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.technology-item .info-item{}
+.technology-item .info-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.technology-item .info-item .info-text{
+    color: #000;
+
+/* TESTO */
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.technology-item .info-item .plus-info{}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .technology-item .technology-heading {
+      
+        font-size: 31px;
+       
+    }
+    .technology-item .info-item {
+       
+        padding-bottom: 60px;
+    }
+}
+@media all and (max-width:991px) {
+    .technology-item .technology-heading {
+        font-size: 23px;
+    }
+    .technology-item .info-item {
+       
+        padding-bottom: 30px;
+    }
+    .technology-item .info-item .info-text {
+       
+        font-size: 16px;
+       
+    }
+}
+
+@media all and (max-width:767px) {
+    .technology-item .technology-heading {
+        font-size: 29px;
+    }
+    .technology-item .info-item {
+       margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    .technology-item .info-item .info-text {
+       
+        font-size: 16px;
+       
+    }
+}
+
+@media all and (max-width:350px) {
+    .technology-item .technology-heading {
+        font-size: 23px;
+    }
+    .technology-item .info-item {
+       margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    .technology-item .info-item .info-text {
+       
+        font-size: 15px;
+       
+    }
+}
+
+
+
+
+
+
+
+/*==============================================================*/
+/*========Start Main romantic vs. other vibrators Section=======*/
+/*==============================================================*/
+
+.romantic-vibrators-section{}
+.romantic-vibrator-heading{
+    padding: 130px 0px;
+}
+.romantic-vibrator-heading .ro-vi-heading-text{
+    color: #7F78E0;
+font-family: Poppins;
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.romantic-vibrator-heading .ro-vi-heading-text-two{
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.flex-box-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.flex-box-two .romantico-vibrator-item{
+    flex-basis: 22%;
+}
+.flex-box-two .romantico-vibrator-item .ul{}
+.flex-box-two .romantico-vibrator-item .ul .romantico-list{
+    color: #000;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-bottom: 46px;
+}
+.flex-box-two .romantico-vibrator-item .ul .custom-height {
+	height: 140px;
+}
+.flex-box-two .romantico-vibrator-item .ul .romantico-list .romantico-iamge{}
+.flex-box-two .romantico-vibrator-item .ul .small-font{
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.flex-box-two .romantico-vibrator-item .ul .flex-box-three{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-box-two .romantico-vibrator-item .ul .flex-box-three .color-box{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #7F78E0;
+}
+
+
+.custom-bb-color  {
+    border-radius: 20px;
+background: #ECECEC;
+padding: 20px 10px;
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .flex-box-two .romantico-vibrator-item {
+        flex-basis: 24%;
+    }
+    .flex-box-two .romantico-vibrator-item .ul .small-font {
+       
+        font-size: 20px;
+       
+    }
+    .flex-box-two .romantico-vibrator-item .ul .romantico-list {
+       
+        font-size: 20px;
+       
+        padding-bottom: 25px;
+    }
+}
+@media all and (max-width:991px) {
+    .flex-box-two .romantico-vibrator-item {
+        flex-basis: 45%;
+        margin-bottom: 60px;
+    }
+    .romantic-vibrator-heading .ro-vi-heading-text {
+      
+        font-size: 50px;
+       
+    }
+    .romantic-vibrator-heading .ro-vi-heading-text-two {
+        
+        font-size: 35px;
+       
+    }
+    .romantic-vibrator-heading {
+        padding: 70px 0px;
+    }
+}
+@media all and (max-width:767px) {
+    .flex-box-two .romantico-vibrator-item {
+        flex-basis: 48%;
+        margin-bottom: 60px;
+    }
+    .flex-box-two .romantico-vibrator-item .ul .small-font {
+       
+        font-size: 20px;
+       
+    }
+    .flex-box-two .romantico-vibrator-item .ul .romantico-list {
+       
+        font-size: 20px;
+       
+        padding-bottom: 25px;
+    }
+    .romantic-vibrator-heading .ro-vi-heading-text {
+      
+        font-size: 50px;
+       
+    }
+    .romantic-vibrator-heading .ro-vi-heading-text-two {
+        
+        font-size: 35px;
+       
+    }
+    .romantic-vibrator-heading .ro-vi-heading-text {
+      
+        font-size: 40px;
+       
+    }
+    .romantic-vibrator-heading .ro-vi-heading-text-two {
+        
+        font-size: 30px;
+       
+    }
+}
+@media all and (max-width:577px) {
+    .flex-box-two .romantico-vibrator-item {
+        flex-basis: 98%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        padding: 50px 20px;
+    }
+    .romantic-vibrator-heading {
+        padding: 70px 25px 0px;
+        margin-bottom: -100px;
+    }
+}
+
+
+/*==============================================================*/
+/*========Start Main romantic vs. other vibrators Section=======*/
+/*==============================================================*/
+.machepiacere-section{}
+.machepiacere-heading{
+    padding: 130px 0px 93px;
+}
+.machepiacere-heading .machepiacere-heading-text{
+    color: var(--verdino-mentino, #7DDE92);
+font-family: Poppins;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.flex-box-four{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-box-four .machepiacere-item{
+    flex-basis: 30%;
+    padding: 20px;
+}
+.flex-box-four .machepiacere-item .machepiacere-image-area{
+    position: relative;
+}
+
+.flex-box-four .machepiacere-item .machepiacere-image-area .machepiacere-img{
+    height: auto;
+    width: 100%;
+}
+.flex-box-four .machepiacere-item .machepiacere-image-area .machepiacere-love{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.flex-box-four .machepiacere-item .machepiacere-details{}
+.flex-box-four .machepiacere-item .machepiacere-details .machepiacere-details-heading{
+    color: #000;
+
+/* H3 */
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding: 10px 0px;
+}
+.flex-box-four .machepiacere-item .machepiacere-details .machepiacere-details-text{
+    color: #000;
+
+/* didascalia */
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.28px;
+}
+.flex-box-four .machepiacere-item .machepiacere-details .price-cart-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.flex-box-four .machepiacere-item .machepiacere-details .price-cart-area .machepiacere-price-area{
+
+}
+.flex-box-four .machepiacere-item .machepiacere-details .price-cart-area .machepiacere-price-area .machepiacere-price{
+    color: var(--viola, #7F78E0);
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.flex-box-four .machepiacere-item .machepiacere-details .price-cart-area .machepiacere-cart-area{}
+.flex-box-four .machepiacere-item .machepiacere-details .price-cart-area .machepiacere-cart-area .cart-link{}
+.flex-box-four .machepiacere-item .machepiacere-details .price-cart-area .machepiacere-cart-area .cart-link .cart-icon{
+    height: 55px;
+    width: 55px;
+}
+
+
+
+
+/* [[[[[[[[[[[[[[[[[[[[-----CUSTOM ANIMATION------]]]]]]]]]]]]]]]]]]]]] */
+
+
+
+
+
+  .custom-hover{
+
+   
+    position: relative !important;
+    text-decoration: none !important;
+    color: #7F78E0 !important;
+   
+    background-size: 300% !important;
+    transition: all 0.6s !important;
+
+  
+}
+
+.bg-color{
+color: #fff !important;
+background-image: linear-gradient(120deg, #7F78E0 50%, #fff 50%) !important;
+}
+.custom-hover:hover {
+color: #7F78E0 !important;
+background-position: 100% !important;
+transform: translateX(0.5rem) !important;
+}
+
+
+
+
+
+
+.custom-hover-collapse{
+
+   
+    position: relative !important;
+    text-decoration: none !important;
+    color: #7F78E0 !important;
+   
+    background-size: 300% !important;
+    transition: all 0.6s !important;
+
+  
+}
+
+.bg-color-two{
+color: #7F78E0 !important;
+background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 50%, #7F78E0 50%) !important;
+}
+.custom-hover-collapse:hover {
+color: #fff !important;
+background-position: 100% !important;
+transform: translateX(0.5rem) !important;
+}
+
+
+
+  
+.input-box:focus {
+    outline: none;
+    border: 5px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(315deg, rgb(236, 160, 255), rgb(170, 178, 255), rgb(132, 255, 201));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: bg-hue 2s linear infinite;
+  }
+  
+  /* @keyframes for the gradient animation */
+  @keyframes bg-hue {
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
