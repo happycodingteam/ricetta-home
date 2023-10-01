@@ -2161,6 +2161,11 @@ body {
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.buy-button-area .buy-button:hover {
+    background: #A31F27;
+    color: #FFFFFF;
+    border: none;
+}
 
 /* ------------Body Right Area Start--------------------- */
 .main-body-right-area {
@@ -2354,7 +2359,7 @@ body {
 
 /* [[[[[[[[[[[[[[[[[[[[-----CUSTOM ANIMATION FOR BUTTON------]]]]]]]]]]]]]]]]]]]]] */
 /* -----------------01--------------------- */
-/* .custom-hover {
+.custom-hover {
     position: relative !important;
     text-decoration: none !important;
     color: #7F78E0 !important;
@@ -2374,9 +2379,9 @@ body {
     -webkit-transform: translateX(0.5rem) !important;
     -ms-transform: translateX(0.5rem) !important;
     transform: translateX(0.5rem) !important;
-} */
+}
 /* -----------------02--------------------- */
-/* .custom-hover-collapse {
+.custom-hover-collapse {
     position: relative !important;
     text-decoration: none !important;
     color: #7F78E0 !important;
@@ -2396,9 +2401,9 @@ body {
     -webkit-transform: translateX(0.5rem) !important;
     -ms-transform: translateX(0.5rem) !important;
     transform: translateX(0.5rem) !important;
-} */
+}
 /* -----------------03--------------------- */
-/* .custom-hover-buy {
+.custom-hover-buy {
     position: relative !important;
     text-decoration: none !important;
     color: #373737 !important;
@@ -2418,9 +2423,9 @@ body {
     -webkit-transform: translateX(0.5rem) !important;
     -ms-transform: translateX(0.5rem) !important;
     transform: translateX(0.5rem) !important;
-} */
+}
 /* -----------------04--------------------- */
-/* .custom-hover-pre {
+.custom-hover-pre {
     position: relative !important;
     text-decoration: none !important;
     color: #373737 !important;
@@ -2440,9 +2445,9 @@ body {
     -webkit-transform: translateX(0.5rem) !important;
     -ms-transform: translateX(0.5rem) !important;
     transform: translateX(0.5rem) !important;
-} */
+}
 /* -----------------05--------------------- */
-/* .input-box:focus {
+.input-box:focus {
     outline: none;
     border: 5px solid transparent;
     background-image: -o-linear-gradient(white, white), -o-linear-gradient(135deg, rgb(236, 160, 255), rgb(170, 178, 255), rgb(132, 255, 201));
@@ -2463,4 +2468,4 @@ body {
         -webkit-filter: hue-rotate(360deg);
         filter: hue-rotate(360deg);
     }
-} */
+}
